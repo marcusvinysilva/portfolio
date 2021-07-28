@@ -5,166 +5,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Portfólio</title>
+    <title>Portfolio do Marcus</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/fontAwesome.css">
 </head>
 
 <body>
 
     <nav>
         <ul>
-            <li><a href="#first">Inicio</a></li>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#1"><i class="fa fa-home"></i> <em>Inicio</em></a></li>
+            <li><a href="#2"><i class="fa fa-user"></i> <em>Habilidades</em></a></li>
+            <li><a href="#3"><i class="fa fa-image"></i> <em>Projetos</em></a></li>
+            <li><a href="#4"><i class="fa fa-envelope"></i> <em>Contato</em></a></li>
         </ul>
     </nav>
 
-    <section id="first">
-        <div id="first-text">
-            <p>“Mera mudança não é crescimento. Crescimento é a síntese de mudança e continuidade, e onde não há
-                continuidade não há crescimento.”</p>
-            <span> C.S. Lewis</span>
+    <section class='slides'>
+        <div class="slide" id="1">
+            <div class="content first-content">
+                <div class="container-fluid">
+                    <div class="col-md-3">
+                        <div class="author-image"><img src="../static/img/marcus.png" alt="Author Image"></div>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Meu nome é Marcus, tenho 24 anos e moro em Ananindeua no Estado do Pará. Sou formado em
+                            Licenciatura em Matemática pela Universidade do Estado do Pará e atualmente estudo
+                            programação na Blue EdTech. Gosto de aprender, ensinar e pretendo mudar a vida de pessoas
+                            através da programação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="2">
+            <div class="content second-content">
+                <div id="habilidades">
+                    <h2>Habilidades Técnicas</h2>
+
+                    <p>Python</p>
+                    <div>
+                        <span id="python">60%</span>
+                    </div>
+
+                    <p>JavaScript</p>
+                    <div>
+                        <span id="js">40%</span>
+                    </div>
+
+                    <p>HTML 5</p>
+                    <div>
+                        <span id="html">30%</span>
+                    </div>
+
+                    <p>CSS 3</p>
+                    <div>
+                        <span id="css">10%</span>
+                    </div>
+
+                    <p>Flask</p>
+                    <div>
+                        <span id="flask">20%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="3">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div>
+                        <img src="../static/img/python-logo.png" alt="">
+                        <h2>Jokenpo</h2>
+                        <p>Esse projeto foi desenvolvido em Python no módulo de Lógica de Programação da Blue EdTech. O
+                            jogo
+                            consiste na antiga brincadeira de pedra, papel e tesoura (jokenpo, como é conhecida
+                            mundialmente).</p>
+                        <a href="https://github.com/marcusvinysilva/jokenpo.git" target="_blank"><button>Veja
+                                mais</button></a>
+                    </div>
+
+                    <div>
+                        <img src="../static/img/python-logo.png" alt="">
+                        <h2>Simulador de Votação</h2>
+                        <p>Esse projeto foi desenvolvido em Python no módulo de Lógica de Programação da Blue EdTech. A
+                            ideia foi
+                            densenvolver um simulador de votação e no fim mostrar qual candidato ganhou a eleição.</p>
+                        <a href="https://github.com/marcusvinysilva/simulador-de-votacao.git"
+                            target="_blank"><button>Veja
+                                mais</button></a>
+                    </div>
+
+                    <div>
+                        <img src="../static/img/python-logo.png" alt="">
+                        <h2>Jogo de Ficção Interativa</h2>
+                        <p>Esse projeto foi desenvolvido em Python no módulo de Lógica de Programação da Blue EdTech.
+                            Tive ajuda de
+                            duas colegas do curso e a ideia foi fazer uma história interativa na qual o usuário
+                            definiria o rumo da
+                            história.</p>
+                        <a href="https://github.com/marcusvinysilva/jogo-ficcao-interativa.git"
+                            target="_blank"><button>Veja
+                                mais</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="4">
+            <div class="content fouthr-content">
+                <section id="contato">
+
+                    <div id="redes">
+                        <h3>Conecte-se comigo</h3>
+                        <a href="https://www.linkedin.com/in/marcusvinysilva/" target="_blank">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="https://github.com/marcusvinysilva" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/marcusvinysilva/" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <h3>Mande uma mensagem</h3>
+
+                    <form action='/send' method="POST">
+                        <label for="nome">Nome</label>
+                        <input type="text" placeholder="Digite seu nome" id="nome" name="nome">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" placeholder="Digite seu email" id="email" name="email">
+
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+                            placeholder="Digite sua mensagem"></textarea>
+
+                        <button type="submit" id="enviar">Enviar</button>
+
+                    </form>
+
+                    <div id="carregamento">
+                        <p>Enviando mensagem</p>
+                        <div id="loader"></div>
+                    </div>
+
+            </div>
         </div>
 
-        <div id="img-rocket">
-            <img src="../static/img/Rocket-amico.png" alt="foguete decolando">
-        </div>
     </section>
 
-    <section id="sobre">
-        <div id="img-perfil">
-            <img src="../static/img/marcus.png" alt="Foto do Marcus">
+    <div class="footer">
+        <div class="content">
+            <p>Copyright &copy; 2021 Marcus Silva</p>
         </div>
+    </div>
 
-        <div id="texto-sobre">
-            <p>Meu nome é Marcus, tenho 24 anos e moro em Ananindeua no Estado do Pará. Sou formado em Licenciatura em
-                Matemática pela Universidade do Estado do Pará e atualmente estudo programação na Blue EdTech. Gosto de
-                aprender, ensinar e pretendo mudar a vida de pessoas através da programação.</p>
-        </div>
-    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../static/js/datepicker.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/form.js"></script>
 
-
-    <section id="projetos">
-
-        <div>
-            <img src="../static/img/python-logo.png" alt="">
-            <h2>Jokenpo</h2>
-            <p>Esse projeto foi desenvolvido em Python no módulo de Lógica de Programação da Blue EdTech. O jogo
-                consiste na antiga brincadeira de pedra, papel e tesoura (jokenpo, como é conhecida mundialmente).</p>
-            <a href="https://github.com/marcusvinysilva/jokenpo.git" target="_blank"><button>Veja mais</button></a>
-        </div>
-
-        <div>
-            <img src="../static/img/python-logo.png" alt="">
-            <h2>Simulador de Votação</h2>
-            <p>Esse projeto foi desenvolvido em Python no módulo de Lógica de Programação da Blue EdTech. A ideia foi
-                densenvolver um simulador de votação e no fim mostrar qual candidato ganhou a eleição.</p>
-            <a href="https://github.com/marcusvinysilva/simulador-de-votacao.git" target="_blank"><button>Veja
-                    mais</button></a>
-        </div>
-
-        <div>
-            <img src="../static/img/python-logo.png" alt="">
-            <h2>Jogo de Ficção Interativa</h2>
-            <p>Esse projeto foi desenvolvido em Python no módulo de Lógica de Programação da Blue EdTech. Tive ajuda de
-                duas colegas do curso e a ideia foi fazer uma história interativa na qual o usuário definiria o rumo da
-                história.</p>
-            <a href="https://github.com/marcusvinysilva/jogo-ficcao-interativa.git" target="_blank"><button>Veja
-                    mais</button></a>
-        </div>
-
-        <!-- <div>
-            <img src="../static/img/python-logo.png" alt="">
-            <h2>Evolução Pokemon</h2>
-            <p>Esse projeto foi desenvolvido em HTML, CSS e JavaScript no módulo de Web da Blue EdTech. A página
-                apresenta um personagem do anime Pokemon e suas respectivas evoluções na história.</p>
-            <a href="https://github.com/marcusvinysilva/evolucao-pokemon.git" target="_blank"><button>Veja
-                    mais</button></a>
-        </div> -->
-
-    </section>
-
-    <section id="habilidades">
-        <h2>Habilidades Técnicas</h2>
-
-        <p>Python</p>
-        <div>
-            <span id="python">60%</span>
-        </div>
-
-        <p>JavaScript</p>
-        <div>
-            <span id="js">40%</span>
-        </div>
-
-        <p>HTML 5</p>
-        <div>
-            <span id="html">30%</span>
-        </div>
-
-        <p>CSS 3</p>
-        <div>
-            <span id="css">10%</span>
-        </div>
-
-        <p>Flask</p>
-        <div>
-            <span id="flask">20%</span>
-        </div>
-    </section>
-
-    <section id="contato">
-
-        <div id="redes">
-            <h3>Conecte-se comigo</h3>
-            <a href="https://www.linkedin.com/in/marcusvinysilva/" target="_blank">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-
-            <a href="https://github.com/marcusvinysilva" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-
-            <a href="https://www.instagram.com/marcusvinysilva/" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-        </div>
-
-        <h3>Mande uma mensagem</h3>
-
-        <form action='/send' method="POST">
-            <label for="nome">Nome</label>
-            <input type="text" placeholder="Digite seu nome" id="nome" name="nome">
-
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu email" id="email" name="email">
-
-
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-
-            <button type="submit" id="enviar">Enviar</button>
-
-        </form>
-
-        <div id="carregamento">
-            <p>Enviando mensagem</p>
-            <div id="loader"></div>
-        </div>
-
-
-    </section>
-
-    <footer>
-        <hr>
-        <p>Todos os direitos reservados: Marcus Silva&copy;</p>
-    </footer>
-
-    <script src="../static/js/script.js"></script>
 </body>
 
 </html>
