@@ -327,11 +327,11 @@ div#habilidades span#flask {
   position: relative;
 }
 
-.third-content a {
+.third-content a#config {
   padding: 1rem;
   text-align: end;
   text-decoration: none;
-  color: #0066ff;
+  color: #fff;
   font-size: 2rem;
   transition: all .2s ease-out;
   position: absolute;
@@ -339,12 +339,16 @@ div#habilidades span#flask {
   right: 1rem;
 }
 
-.third-content div {
+.third-content a#config:hover {
+  color: black;
+}
+
+.third-content div#card {
   padding: 2rem;
   margin: 0 1rem 0 1rem;
 }
 
-.third-content div p {
+.third-content div#card p {
   text-align: justify;
   color: #fff;
   display: block;
@@ -352,18 +356,18 @@ div#habilidades span#flask {
   margin-right: 10vw;
 }
 
-.third-content div h2 {
+.third-content div#card h2 {
   text-align: center;
   padding: 1rem;
   color: #fff;
 }
 
-.third-content div img {
+.third-content div#card img {
   display: block;
   margin: auto;
 }
 
-.third-content div button {
+.third-content div#card button {
   border: 1px solid black;
   background-color: #fff;
   color: black;
@@ -376,13 +380,15 @@ div#habilidades span#flask {
   margin-top: 2rem;
   cursor: pointer;
   transition: 0.6s ease-in-out;
+  text-decoration: none;
+  text-align: center;
 }
 
-.third-content div a {
+.third-content div#card a {
   text-decoration: none;
 }
 
-.third-content div button:hover {
+.third-content div#card button:hover {
   background-color: black;
   color: #fff;
 }

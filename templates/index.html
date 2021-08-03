@@ -75,20 +75,29 @@
         <section class="slide" id="3">
             <div class="content third-content">
 
-                <a href="/adm" id="config"> 
+                <a href="/adm" id="config" target="_blank"> 
                     <i class="fa fa-cog" aria-hidden="true"></i>
                  </a>           
 
-                <div>
+                {% for p in projetos %}
+                <div id="card">
+                    <img src="{{p.imagem}}" alt="">
+                    <h2>{{p.nome}}</h2>
+                    <p>{{p.descricao}}</p>
+                    <a id="btn-proj" href="{{p.link}}" target="_blank"><button>Veja mais</button></a>
+                </div>
+                {% endfor %}
+
+                <!-- <div id="card">
                     <img src="../static/img/python-logo.png" alt="">
                     <h2>Jokenpo</h2>
                     <p>Esse projeto foi desenvolvido em Python no módulo de Lógica de Programação da Blue EdTech. O
                         jogo
                         consiste na antiga brincadeira de pedra, papel e tesoura (jokenpo, como é conhecida
                         mundialmente).</p>
-                    <!-- <a id="btn-proj" href="https://github.com/marcusvinysilva/jokenpo.git" target="_blank"><button>Veja
+                    <a id="btn-proj" href="https://github.com/marcusvinysilva/jokenpo.git" target="_blank"><button>Veja
                             mais</button></a> -->
-                </div>
+
             </div>
         </section>
         <section class="slide" id="4">

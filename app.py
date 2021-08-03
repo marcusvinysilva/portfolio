@@ -40,7 +40,8 @@ class Projeto(db.Model):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    projetos = Projeto.query.all()
+    return render_template('index.html', projetos=projetos)
 
 @app.route('/adm')
 def adm():
