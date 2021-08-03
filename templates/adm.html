@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio | ADM</title>
+</head>
+
+<body>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+
+    <form action='/new' method="POST">
+
+        <h1>Cadastre um novo projeto</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" placeholder="Nome do projeto" id="nome" name="nome">
+
+        <label for="imagem">Imagem</label>
+        <input type="text" placeholder="Link da imagem" id="imagem" name="imagem">
+
+        <label for="link">Link</label>
+        <input type="text" placeholder="Link do projeto" id="link" name="link">
+
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao" cols="30" rows="10"
+            placeholder="Digite a descrição do projeto"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Imagem</th>
+                <th>Link</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for p in projetos %}
+            <tr>
+                <td>{{p.id}}</td>
+                <td>{{p.nome}}</td>
+                <td>{{p.imagem}}</td>
+                <td>{{p.link}}</td>
+                <td>{{p.descricao}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+<script src="../static/js/adm.js"></script>
+</body>
+
+</html>

@@ -13,6 +13,7 @@
     background: #fff;
   }
 }
+
 @keyframes fill {
   0% {
     width: 0%;
@@ -27,7 +28,8 @@
     height: 100%;
     background: #fff;
   }
-  }
+}
+
 @-webkit-keyframes fillColour {
   0% {
     color: #fff;
@@ -39,6 +41,7 @@
     color: #333;
   }
 }
+
 @keyframes fillColour {
   0% {
     color: #fff;
@@ -50,6 +53,7 @@
     color: #333;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -57,9 +61,9 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-  
+
 html {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -68,8 +72,8 @@ body {
 }
 
 nav {
-	top: 10vh;
-	bottom: 10vh;
+  top: 10vh;
+  bottom: 10vh;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -82,27 +86,27 @@ nav {
 }
 
 nav .logo {
-	margin-top: 45px;
-	padding: 0px 20px;
+  margin-top: 45px;
+  padding: 0px 20px;
 }
 
 nav .logo img {
-	max-width: 70%;
-	overflow-y: hidden;
+  max-width: 70%;
+  overflow-y: hidden;
 }
 
 nav em {
-	font-style: normal;
-	margin-left: 5px;
-	font-size: 14px;
+  font-style: normal;
+  margin-left: 5px;
+  font-size: 14px;
 }
 
 nav ul li i {
-	width: 25px;
+  width: 25px;
 }
 
 nav ul li a {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 nav ul {
@@ -120,26 +124,31 @@ nav ul {
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
+
 nav ul li {
-	margin: 25px 0px;
+  margin: 25px 0px;
 }
+
 nav a, nav a:visited, nav a:active {
   color: #fff;
 }
+
 nav a {
-	text-decoration: none!important;
-	font-size: 14px;
-	letter-spacing: 0.5px;
-  	-webkit-transition: color 2s, background 1s;
-  	transition: color 2s, background 1s;
-  	padding: 20px 30px;
-  	position: relative;
-  	z-index: 0;
+  text-decoration: none!important;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  -webkit-transition: color 2s, background 1s;
+  transition: color 2s, background 1s;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 0;
 }
+
 nav a.active {
   background-color: #fff;
   color: #232323;
 }
+
 nav a::before {
   content: "";
   position: absolute;
@@ -150,14 +159,16 @@ nav a::before {
   opacity: 1;
   z-index: -1;
 }
+
 nav a:hover {
-	text-decoration: none;
+  text-decoration: none;
   -webkit-animation: fillColour 0.7s forwards ease-in-out;
-          animation: fillColour 0.7s forwards ease-in-out;
+  animation: fillColour 0.7s forwards ease-in-out;
 }
+
 nav a:hover::before {
   -webkit-animation: fill 0.7s forwards ease-in-out;
-          animation: fill 0.7s forwards ease-in-out;
+  animation: fill 0.7s forwards ease-in-out;
   opacity: 1;
 }
 
@@ -177,6 +188,7 @@ nav a:hover::before {
   text-align: center;
   background-size: cover;
 }
+
 .slides .slide .content {
   overflow-y: scroll;
   position: relative;
@@ -187,56 +199,61 @@ nav a:hover::before {
   bottom: 10%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .content::-webkit-scrollbar {
   width: 5px;
   height: 8px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .content::-webkit-scrollbar-thumb {
-    background: rgba(250, 250, 250, 0.5);
+  background: rgba(250, 250, 250, 0.5);
 }
 
 .slides .slide:nth-child(1) {
   background-image: url(../img/first_bg.jpg);
 }
+
 .slides .slide:nth-child(2) {
   background-image: url(../img/second_bg.jpg);
 }
+
 .slides .slide:nth-child(3) {
   background-image: url(../img/third_bg.jpg);
 }
+
 .slides .slide:nth-child(4) {
   background-image: url(../img/fourth_bg.jpg);
 }
 
 .first-content {
-	padding: 100px;
-	text-align: left;
-	padding-top: 13%;
+  padding: 100px;
+  text-align: left;
+  padding-top: 13%;
 }
 
 .first-content .foto-autor img {
-	border-radius: 30px;
-	max-width: 20%;
-	overflow: hidden;
-	float: left;
-	margin-right: 35px;
+  border-radius: 30px;
+  max-width: 20%;
+  overflow: hidden;
+  float: left;
+  margin-right: 35px;
 }
 
 .first-content p {
-	color: #fff;
-	font-size: 16px;
-	font-weight: 300;
-	letter-spacing: 2px;
-	line-height: 26px;
-	margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 26px;
+  margin-bottom: 20px;
   margin-top: 5%;
   text-align: justify;
 }
 
 .second-content {
-	padding: 100px;
-	text-align: left;
+  padding: 100px;
+  text-align: left;
 }
 
 div#habilidades h2 {
@@ -260,21 +277,21 @@ div#habilidades div {
 }
 
 div#habilidades span#python {
-    background-color: #2e3440;
-    width: 60%;
-    color: #fff;
-    padding: 0.3rem;
-    text-align: center;
-    border-radius: 0.9rem;
-  }
+  background-color: #2e3440;
+  width: 60%;
+  color: #fff;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 0.9rem;
+}
 
 div#habilidades span#js {
-    background-color: #2e3440;
-    width: 40%;
-    color: #fff;
-    padding: 0.3rem;
-    text-align: center;
-    border-radius: 0.9rem;
+  background-color: #2e3440;
+  width: 40%;
+  color: #fff;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 0.9rem;
 }
 
 div#habilidades span#html {
@@ -287,34 +304,47 @@ div#habilidades span#html {
 }
 
 div#habilidades span#css {
-    background-color: #2e3440;
-    width: 10%;
-    color: #fff;
-    padding: 0.3rem;
-    text-align: center;
-    border-radius: 0.9rem;
+  background-color: #2e3440;
+  width: 10%;
+  color: #fff;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 0.9rem;
 }
 
 div#habilidades span#flask {
-    background-color: #2e3440;
-    width: 20%;
-    color: #fff;
-    padding: 0.3rem;
-    text-align: center;
-    border-radius: 0.9rem;
+  background-color: #2e3440;
+  width: 20%;
+  color: #fff;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 0.9rem;
 }
 
 .third-content {
-	padding: 100px;
-	text-align: left;
+  padding: 100px;
+  text-align: left;
+  position: relative;
 }
-  
+
+.third-content a {
+  padding: 1rem;
+  text-align: end;
+  text-decoration: none;
+  color: #0066ff;
+  font-size: 2rem;
+  transition: all .2s ease-out;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
 .third-content div {
   padding: 2rem;
   margin: 0 1rem 0 1rem;
 }
 
-.third-content  div p {
+.third-content div p {
   text-align: justify;
   color: #fff;
   display: block;
@@ -322,18 +352,18 @@ div#habilidades span#flask {
   margin-right: 10vw;
 }
 
-.third-content  div h2 {
+.third-content div h2 {
   text-align: center;
   padding: 1rem;
   color: #fff;
 }
 
-.third-content  div img {
+.third-content div img {
   display: block;
   margin: auto;
 }
 
-.third-content  div button {
+.third-content div button {
   border: 1px solid black;
   background-color: #fff;
   color: black;
@@ -348,11 +378,11 @@ div#habilidades span#flask {
   transition: 0.6s ease-in-out;
 }
 
-.third-content  div a{
-    text-decoration: none;
+.third-content div a {
+  text-decoration: none;
 }
 
-.third-content  div button:hover {
+.third-content div button:hover {
   background-color: black;
   color: #fff;
 }
@@ -361,6 +391,7 @@ div#habilidades span#flask {
   padding: 100px;
   text-align: left;
 }
+
 section#contato {
   padding: 3rem 10rem 3rem 10rem;
   display: grid;
@@ -368,13 +399,13 @@ section#contato {
 }
 
 section#contato h2 {
- text-align: center;
- font-size: 2.5rem;
- margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 section#contato form {
- width: 50%;
+  width: 50%;
 }
 
 section#contato form input, textarea {
@@ -388,43 +419,43 @@ section#contato form input, textarea {
 }
 
 section#contato form label {
- width: 100%;
- font-size: 1.2rem;
- color: #fff;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 section#contato form button {
- border: 1px solid black;
- background-color: #fff;
- color: black;
- font-size: .8vw;
- font-weight: 600;
- padding: 1rem;
- border-radius: 0.5rem;
- display: block;
- margin: auto;
- margin-top: 2rem;
- cursor: pointer;
- transition: 0.6s ease-in-out;
- width: 40%;
+  border: 1px solid black;
+  background-color: #fff;
+  color: black;
+  font-size: .8vw;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  width: 40%;
 }
 
 section#contato form button:disabled {
- border: 1px solid rgb(170, 170, 170);
- background-color: rgb(255, 255, 255);
- color: rgb(170, 170, 170);
+  border: 1px solid rgb(170, 170, 170);
+  background-color: rgb(255, 255, 255);
+  color: rgb(170, 170, 170);
 }
 
 section#contato form button:hover:disabled {
- border: 1px solid rgb(170, 170, 170);
- background-color: rgb(255, 255, 255);
- color: rgb(170, 170, 170);
+  border: 1px solid rgb(170, 170, 170);
+  background-color: rgb(255, 255, 255);
+  color: rgb(170, 170, 170);
 }
 
 section#contato form button:hover {
- background-color: black;
- color: #fff;
- transform: scale(1.2);
+  background-color: black;
+  color: #fff;
+  transform: scale(1.2);
 }
 
 section#contato div#redes a {
@@ -452,14 +483,15 @@ section#contato h3 {
 
 /* Loader de carregamento */
 
-section#contato div#carregamento{
- display: none; /* Deixa o display none para não aparecer até que você clique no botão enviar (ver JS) */
- justify-content: center;
- flex-wrap: wrap;
- margin-top: 3rem;
+section#contato div#carregamento {
+  display: none;
+  /* Deixa o display none para não aparecer até que você clique no botão enviar (ver JS) */
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
-section#contato div#carregamento p{
+section#contato div#carregamento p {
   color: #fff;
   font-weight: 700;
   font-size: 2rem;
@@ -468,54 +500,59 @@ section#contato div#carregamento p{
   padding: 2rem;
 }
 
-section#contato div#carregamento div#loader{
- border: 13px solid #fff;
- border-radius: 50%;
- border-top: 13px solid rgba(0, 0, 0, 0.5);
- border-bottom: 13px solid rgba(0, 0, 0, 0.5);
- width: 80px;
- height: 80px;
- /* Anima o elemento div#loader criando a variável spin, em 2s de forma linear e infinita */
- animation: spin 2s linear infinite;
+section#contato div#carregamento div#loader {
+  border: 13px solid #fff;
+  border-radius: 50%;
+  border-top: 13px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 13px solid rgba(0, 0, 0, 0.5);
+  width: 80px;
+  height: 80px;
+  /* Anima o elemento div#loader criando a variável spin, em 2s de forma linear e infinita */
+  animation: spin 2s linear infinite;
 }
 
 /* Anima a variável spin do animation */
+
 @keyframes spin {
-  0% {  /* Começa em 0% */
-    transform: rotate(0deg); /* Rotação do elemento no 0° */ 
-  } 
-  100% { /* Vai até 100% */
-    transform: rotate(360deg); /* Rotação do elemento em 360° */ 
+  0% {
+    /* Começa em 0% */
+    transform: rotate(0deg);
+    /* Rotação do elemento no 0° */
+  }
+  100% {
+    /* Vai até 100% */
+    transform: rotate(360deg);
+    /* Rotação do elemento em 360° */
   }
 }
 
 /* Loader de carregamento */
-  
+
 .footer .content {
-	left: 30%;
-	width: 70%;
-	max-width: 70%;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	display: inline-block;
+  left: 30%;
+  width: 70%;
+  max-width: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
 }
 
 .footer .content p {
-	text-align: center;
-	font-size: 13px;
-	color: #fff;
-	margin-bottom: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .footer .content p a {
-	color: #aaa;
-	text-decoration: none;
+  color: #aaa;
+  text-decoration: none;
 }
 
 /* Página Send */
 
-section#success{
+section#success {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,7 +560,7 @@ section#success{
   background-color: rgb(235, 255, 235);
 }
 
-section#success div#card{
+section#success div#card {
   background-color: rgb(166, 218, 166);
   text-align: center;
   padding: 4rem;
@@ -532,34 +569,34 @@ section#success div#card{
   width: 40%;
 }
 
-section#success div#card h1{
+section#success div#card h1 {
   margin: 2rem 0rem;
 }
 
-section#success div#card i{
+section#success div#card i {
   font-size: 5rem;
 }
 
-section#success div#card h3{
+section#success div#card h3 {
   margin-bottom: 2rem;
 }
 
-section#success div#card p{
+section#success div#card p {
   margin-bottom: 3rem;
   width: 100%;
   word-break: break-word;
 }
 
-section#success div#card a{
+section#success div#card a {
   text-decoration: none;
   padding: 1rem;
   border: 1px solid rgb(0, 88, 0);
-  color:rgb(0, 88, 0);
+  color: rgb(0, 88, 0);
   border-radius: .4rem;
   transition: all .4s ease-out;
 }
 
-section#success div#card a:hover{
+section#success div#card a:hover {
   background-color: rgb(0, 88, 0);
   color: #fff;
 }
