@@ -90,7 +90,7 @@ def edit(id):
 
     projeto = Projeto.query.get(id)
     projetos = Projeto.query.all()
-    if request.form == 'POST':
+    if request.method == 'POST':
         projeto.nome = request.form['nome']
         projeto.descricao = request.form['descricao']
         projeto.imagem = request.form['imagem']
