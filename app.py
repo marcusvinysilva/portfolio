@@ -67,7 +67,7 @@ def new():
         db.session.commit()
         flash('Projeto criado com sucesso!')
         return redirect('/adm')
-    flash('Você não tem autorização para aceesar essa rota!')
+    flash('Você não tem autorização para acessar essa rota!')
     return redirect('/login')
 
 @app.route('/delete/<id>')
