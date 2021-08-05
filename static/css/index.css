@@ -365,6 +365,7 @@ div#habilidades span#flask {
 .third-content div#card img {
   display: block;
   margin: auto;
+  width: 15rem;
 }
 
 .third-content div#card button {
