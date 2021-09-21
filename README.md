@@ -6,8 +6,8 @@ No final você deve criar um formulário com no mínimo 3 campos, sem limite má
 
 Você irá criar esse projeto em duas partes:
 
-## Parte 1
+### Parte 1
 Na primeira parte desse projeto você deve criar todo layout do seu portfólio utilizando HTML e CSS, seja criativo, mas não reinvente a roda, se inspire em templates pré-existentes, e se quiser se inspire no portfólio construído em sala de aula. Crie o seu formulário de contato e valide os campos utilizando JavaScript, aplicando os conceitos de eventos, funções e acesso à árvore do DOM.
 
-## Parte 2
+### Parte 2
 Agora que a parte estática do seu site está finalizada, transforme o seu site em uma aplicação Flask, para capturar as informações do seu formulário, para poder enviar as informações para o seu próprio e-mail. No final, faça o deploy da sua aplicação no Heroku para disponibilizá-la para todos na internet.
